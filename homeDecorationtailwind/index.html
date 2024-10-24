@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS- demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-[url('./image/black.jpeg')] min-h-screen bg-center bg-cover px-48 py-8 relative">
+        <!-- navbar -->
+         <nav class="flex items-center">
+            <img  class="w-40 cursor-pointer mr-0.5" src="./image/icon.png" alt="">
+            <ul class="flex-1 text-center">
+                <!-- flex-1 doesnot change direction  -->
+                <li class=" list-none inline-block px-5"><a class="text-white" href="#">Home</a></li>
+                <li class=" list-none inline-block px-5"><a  class="text-white" href="#">About</a></li>
+                <li class=" list-none inline-block px-5"><a  class="text-white" href="#">Features</a></li>
+                <li class=" list-none inline-block px-5"><a  class="text-white" href="#">Contact</a></li>
+            </ul>
+            <img class="w-4 cursor-pointer" src="./image/icon 1.png" alt="">
+         </nav>
+         <div class="text-white mt-48 max-w-xl">
+            <!-- max-w-xl =width size can adjust -->
+            <h1 class="text-6xl font-semibold leading-normal">Groceries <br>
+                <!-- leading normal is used to space between two sentence -->
+            Delivery in <span class="font-normal">15 mins</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium a harum placeat architecto voluptas, sed veritatis. Explicabo maiores tenetur, assumenda provident esse dicta voluptates sed! Nulla harum laborum reprehenderit consequatur.</p>
+            <div class="mt-10 ">
+                <a class="bg-yellow-300 py-3 px-8 rounded-3xl mr-10 font-medium hover:bg-transparent hover:border hover:border-yellow-300 duration-300 border border-transparent" href="#">Order Now</a>
+                <!-- hover at atime one property only working thatswhy number of times use hover -->
+                <a href="#">Download App &#8595; </a>
+                <!-- down c=arrow can get in html symbol in google (toptal) -->
+            </div>
+         </div>
+         <img  class="w-full xl:w-1/3 xl:absolute bottom-0 right-20" src="./image/man.png" alt="">
+         
+         <!-- image responsive =gives image size decrease in large screen(xl) -->
+    </div>
+</body>
+</html>
